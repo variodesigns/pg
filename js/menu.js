@@ -22,6 +22,8 @@ window.addEventListener("load", () => {
 
     const totalHeight = announcement.offsetHeight + navbar.offsetHeight;
 
-    mobileMenu.style.top = totalHeight + "px";
-    mobileMenu.style.height = `calc(100vh - ${totalHeight}px)`;
+    const offset = 15; // adjust this number to move menu lower
+
+    mobileMenu.style.top = (totalHeight + offset) + "px";
+    mobileMenu.style.height = `calc(100vh - ${totalHeight + offset}px)`;
 });
