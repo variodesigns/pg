@@ -71,6 +71,8 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    position: relative;
+    z-index: 9999;
 }
 
 .hamburger span {

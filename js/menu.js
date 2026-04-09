@@ -1,3 +1,4 @@
+// Handle hamburger open/close
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -13,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+// Position mobile menu AFTER everything loads (fonts, images, etc.)
+window.addEventListener("load", () => {
     const announcement = document.querySelector(".announcement-bar");
     const navbar = document.querySelector(".navbar");
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -24,4 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.style.top = totalHeight + "px";
     mobileMenu.style.height = `calc(100vh - ${totalHeight}px)`;
 });
-</script>
