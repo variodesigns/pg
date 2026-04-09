@@ -56,3 +56,17 @@ body {
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .logo {
+        width: 260px;   /* half size for mobile */
+        margin-top: 60px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+}
+
