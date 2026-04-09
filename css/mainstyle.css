@@ -83,7 +83,7 @@ body {
 /* MOBILE MENU (hidden by default) */
 .mobile-menu {
     position: fixed;
-    top: 120px; /* height of announcement bar + nav bar */
+    top: 160px; /* height of announcement bar + nav bar */
     right: -100%;
     width: 70%;
     height: calc(100vh - 120px); /* fill only below nav */
