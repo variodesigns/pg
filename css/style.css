@@ -1,0 +1,58 @@
+/* Load your custom font */
+@font-face {
+    font-family: "Providence Sans Pro";
+    src: url("../fonts/providencesansbold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Page background */
+body {
+    margin: 0;
+    padding: 0;
+    background: #ebe9dd;
+    font-family: "Providence Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Hidden by default — JS will fade them in */
+.logo,
+.title {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.logo {
+    margin-top: 80px;
+    width: 520px;
+    height: auto;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 42px;
+    color: #ad4100;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Fade-in class */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade-out class */
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
