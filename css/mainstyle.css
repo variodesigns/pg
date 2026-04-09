@@ -83,10 +83,10 @@ body {
 /* MOBILE MENU (hidden by default) */
 .mobile-menu {
     position: fixed;
-    top: 160px; /* height of announcement bar + nav bar */
+    top: 0; /* JS will override this */
     right: -100%;
     width: 70%;
-    height: calc(100vh - 120px); /* fill only below nav */
+    height: 100vh; /* JS will override this */
     background: #ebe9dd;
     display: flex;
     flex-direction: column;

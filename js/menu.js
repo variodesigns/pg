@@ -12,3 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const announcement = document.querySelector(".announcement-bar");
+    const navbar = document.querySelector(".navbar");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    const totalHeight = announcement.offsetHeight + navbar.offsetHeight;
+
+    mobileMenu.style.top = totalHeight + "px";
+    mobileMenu.style.height = `calc(100vh - ${totalHeight}px)`;
+});
+</script>
