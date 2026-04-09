@@ -83,10 +83,10 @@ body {
 /* MOBILE MENU (hidden by default) */
 .mobile-menu {
     position: fixed;
-    top: 0;
+    top: 120px; /* height of announcement bar + nav bar */
     right: -100%;
     width: 70%;
-    height: 100vh;
+    height: calc(100vh - 120px); /* fill only below nav */
     background: #ebe9dd;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,7 @@ body {
     align-items: center;
     gap: 25px;
     transition: right 0.4s ease;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .mobile-menu a {
