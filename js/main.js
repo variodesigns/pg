@@ -22,3 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "homepage.html";
     }, 3200); // 1s fade-out duration
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    // Open/close menu
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll(".mobile-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+        });
+    });
+});

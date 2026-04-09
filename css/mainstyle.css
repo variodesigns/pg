@@ -64,3 +64,62 @@ body {
 .page-content {
     padding: 40px;
 }
+
+/* HAMBURGER ICON (hidden on desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #ad4100;
+    border-radius: 2px;
+}
+
+/* MOBILE MENU (hidden by default) */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #ebe9dd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: right 0.4s ease;
+    z-index: 999;
+}
+
+.mobile-menu a {
+    font-family: "Providence Sans Pro", sans-serif;
+    font-size: 26px;
+    color: #ad4100;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+/* MOBILE BREAKPOINT */
+@media (max-width: 900px) {
+
+    /* Hide desktop menu */
+    .nav-right {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+    }
+}
+
