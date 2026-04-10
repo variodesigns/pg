@@ -60,13 +60,22 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-social {
-        margin-right: auto; /* pushes logo + hamburger to the right */
+
+    .nav-center {
+        flex: 1;
+        display: flex;
+        justify-content: center; /* centers the icons */
+        margin: 0; /* remove desktop offset */
     }
 
-    .nav-social svg {
-        width: 20px;
-        height: 20px;
+    .nav-left {
+        flex: 1;
+    }
+
+    .hamburger {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
