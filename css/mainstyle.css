@@ -324,6 +324,17 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 10px; /* reduce top gap */
+    }
+
+    .about-container {
+        padding-top: 20px; /* reduce container spacing */
+    }
+}
+
+
 /* MENU INTRO SECTION */
 .menu-intro {
     background: #ebe9dd;
