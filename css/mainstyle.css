@@ -732,7 +732,7 @@ body {
     left: 15px;
     width: 2px;
     height: 32px;
-    background: black; /* X is now black */
+    background: white; /* X is now black */
 }
 
 .menu-viewer-close::before {
