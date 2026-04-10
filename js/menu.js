@@ -7,25 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileMenu.classList.toggle("open");
     });
 
+    // Close menu when clicking a link
     document.querySelectorAll(".mobile-menu a").forEach(link => {
         link.addEventListener("click", () => {
             mobileMenu.classList.remove("open");
         });
     });
-});
-
-// Position mobile menu AFTER everything loads (fonts, images, etc.)
-window.addEventListener("load", () => {
-    const announcement = document.querySelector(".announcement-bar");
-    const navbar = document.querySelector(".navbar");
-    const mobileMenu = document.querySelector(".mobile-menu");
-
-    const totalHeight = announcement.offsetHeight + navbar.offsetHeight;
-
-    const offset = 8; // adjust this number to move menu lower
-
-    mobileMenu.style.top = (totalHeight + offset) + "px";
-    mobileMenu.style.height = `calc(100vh - ${totalHeight + offset}px)`;
 });
 
 // HERO SLIDESHOW
