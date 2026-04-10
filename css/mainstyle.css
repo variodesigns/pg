@@ -188,7 +188,7 @@ body {
 
 .mobile-menu {
     position: absolute;
-    top: 4px; /* sits directly under the divider line */
+    top: 4px;
     left: 0;
     width: 100%;
     background: #ebe9dd;
@@ -322,7 +322,6 @@ body {
         max-width: 90%;
     }
 
-    /* Swap order on mobile */
     .about-left {
         order: 2;
     }
@@ -684,31 +683,15 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
+/* CLEAN CLOSE BUTTON (SVG, NO EMOJI) */
 .menu-viewer-close {
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: 40px;
-    color: white;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
-    font-weight: bold;
     z-index: 6000;
-    transition: 0.2s ease;
-}
-
-.menu-viewer-close:hover {
-    opacity: 0.7;
-}
-
-/* MOBILE FIX — Center fullscreen menu images perfectly */
-@media (max-width: 600px) {
-    .menu-viewer img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        margin: auto;
-        display: block;
-    }
-}
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'/><line x1='6' y1='6' x2='18' y2='18'/></svg>");
+    background-size: contain;
+    background-repeat
