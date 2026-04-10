@@ -85,6 +85,10 @@ body {
     opacity: 1;
 }
 
+.hero-slideshow .slide:first-child {
+    opacity: 1; /* show instantly */
+}
+
 /* MOBILE HERO HEIGHT */
 @media (max-width: 600px) {
     .hero-slideshow {
@@ -269,6 +273,13 @@ body {
         order: 1;
         max-width: 90%;
     }
+
+@media (max-width: 900px) {
+    .about-text {
+        margin: 0 auto; /* centers the block */
+        text-align: center; /* ensures text is centered */
+    }
+}
 
     .left-image {
         order: 2;
