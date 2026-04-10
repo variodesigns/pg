@@ -70,7 +70,7 @@ body {
 /* HERO SLIDESHOW */
 .hero-slideshow {
     width: 100%;
-    height: 85vh; /* taller desktop hero */
+    height: 85vh;
     position: relative;
     overflow: hidden;
 }
@@ -87,19 +87,19 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-/* First slide visible by default */
-.hero-slideshow .slide.active {
+/* First slide visible instantly */
+.hero-slideshow .slide:first-child {
     opacity: 1;
 }
 
-.hero-slideshow .slide:first-child {
-    opacity: 1; /* show instantly */
+.hero-slideshow .slide.active {
+    opacity: 1;
 }
 
 /* MOBILE HERO HEIGHT */
 @media (max-width: 600px) {
     .hero-slideshow {
-        height: 65vh; /* fills most of the screen */
+        height: 65vh;
     }
 }
 
@@ -111,7 +111,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     pointer-events: none;
@@ -125,7 +125,7 @@ body {
     font-family: "Providence Sans Pro", sans-serif;
     font-size: 26px;
     text-align: center;
-    max-width: 60%; /* narrower overlay */
+    max-width: 60%;
     line-height: 1.4;
 }
 
@@ -134,7 +134,7 @@ body {
     .hero-text {
         font-size: 18px;
         padding: 18px 22px;
-        max-width: 75%; /* narrower on mobile */
+        max-width: 75%;
     }
 }
 
@@ -179,13 +179,13 @@ body {
     border-radius: 2px;
 }
 
-/* MOBILE MENU (hidden by default) */
+/* MOBILE MENU */
 .mobile-menu {
     position: fixed;
-    top: 0; /* JS will override this */
+    top: 0;
     right: -100%;
     width: 70%;
-    height: 100vh; /* JS will override this */
+    height: 100vh;
     background: #ebe9dd;
     display: flex;
     flex-direction: column;
@@ -210,13 +210,10 @@ body {
 
 /* MOBILE BREAKPOINT */
 @media (max-width: 900px) {
-
-    /* Hide desktop menu */
     .nav-right {
         display: none;
     }
 
-    /* Show hamburger */
     .hamburger {
         display: flex;
     }
@@ -227,7 +224,6 @@ body {
     background: #82a497;
     padding: 80px 0;
     color: white;
-    font-family: "Georgia", serif; /* temporary font */
 }
 
 .about-container {
@@ -260,7 +256,7 @@ body {
 }
 
 .about-text p {
-    font-family: "Providence Sans Regular", serif; /* ← new font */
+    font-family: "Providence Sans Regular", sans-serif;
     font-size: 18px;
     line-height: 1.6;
     color: white;
@@ -274,7 +270,6 @@ body {
         text-align: center;
     }
 
-    /* Only show left image on mobile */
     .right-image {
         display: none;
     }
@@ -282,14 +277,10 @@ body {
     .about-text {
         order: 1;
         max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -20px; /* pulls text upward */
     }
-
-@media (max-width: 900px) {
-    .about-text {
-        margin: 0 auto; /* centers the block */
-        text-align: center; /* ensures text is centered */
-    }
-}
 
     .left-image {
         order: 2;
