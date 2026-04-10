@@ -653,3 +653,49 @@ body {
 .footer-design a:hover {
     opacity: 0.7;
 }
+
+/* FULLSCREEN MENU VIEWER */
+.menu-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 5000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu-viewer.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-viewer img {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.menu-viewer-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 6000;
+    transition: 0.2s ease;
+}
+
+.menu-viewer-close:hover {
+    opacity: 0.7;
+}

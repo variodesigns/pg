@@ -203,8 +203,8 @@
 </footer>
 
 
-    <!-- Mobile Menu Script -->
-    <script src="js/menu.js"></script>
+   <!-- Mobile Menu Script -->
+<script src="js/menu.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     function handleScroll() {
-        const triggerPoint = window.innerHeight * 0.85; // 85% down the viewport
+        const triggerPoint = window.innerHeight * 0.85;
 
         targets.forEach((el) => {
             if (!el.classList.contains("visible")) {
@@ -230,11 +230,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Run on load and on scroll
     handleScroll();
     window.addEventListener("scroll", handleScroll);
 });
 </script>
 
+<!-- FULLSCREEN MENU VIEWER (MUST BE OUTSIDE SCRIPT TAGS) -->
+<div id="menu-viewer" class="menu-viewer">
+    <span class="menu-viewer-close">&times;</span>
+    <img id="menu-viewer-img" src="" alt="Menu Image">
+</div>
+
 </body>
 </html>
+
