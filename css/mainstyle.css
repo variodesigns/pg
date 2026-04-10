@@ -302,6 +302,16 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .about-left {
+        order: 2; /* grid goes second */
+    }
+
+    .about-right {
+        order: 1; /* text goes first */
+    }
+}
+
 /* MENU INTRO SECTION */
 .menu-intro {
     background: #ebe9dd;
