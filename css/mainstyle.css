@@ -41,6 +41,35 @@ body {
     z-index: 1000;
 }
 
+.nav-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-right: 20px;
+}
+
+.nav-social svg {
+    width: 22px;
+    height: 22px;
+    fill: #ad4100;
+    transition: opacity 0.2s ease;
+}
+
+.nav-social a:hover svg {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .nav-social {
+        margin-right: auto; /* pushes logo + hamburger to the right */
+    }
+
+    .nav-social svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 /* Logo */
 .nav-logo {
     height: 60px;
