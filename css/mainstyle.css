@@ -317,16 +317,20 @@ body {
     font-size: 42px;
     color: #ad4100;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: slideInLeft 0.9s ease forwards;
 }
 
-/* Paragraph */
 .menu-intro p {
     font-family: "Providence Sans Regular", sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    color: #333; /* readable on #ebe9dd */
+    color: #333;
     max-width: 700px;
     margin: 0 auto;
+    opacity: 0;
+    animation: slideInRight 0.9s ease forwards;
+    animation-delay: 0.2s; /* slight stagger for polish */
 }
 
 /* MOBILE */
@@ -337,6 +341,29 @@ body {
 
     .menu-intro p {
         font-size: 16px;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
