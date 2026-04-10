@@ -72,16 +72,16 @@ body {
     .nav-center {
         flex: 1;
         display: flex;
-        justify-content: center; /* stays centered */
-        margin: 0; /* remove desktop offset */
+        justify-content: center;
+        margin: 0; 
     }
 
     /* Right column: hamburger */
     .hamburger {
         flex: 1;
         display: flex;
-        justify-content: flex-end; /* forces it to the right */
-        z-index: 9999; /* keeps it clickable */
+        justify-content: flex-end;
+        z-index: 9999;
     }
 
     /* Hide desktop menu on mobile */
@@ -111,7 +111,7 @@ body {
     opacity: 0.7;
 }
 
-/* Divider Line — NOW A REAL CONTAINER */
+/* Divider Line */
 .nav-divider {
     width: 100%;
     height: auto;
@@ -233,7 +233,7 @@ body {
 }
 
 /* =============================== */
-/* NEW MOBILE MENU — FIXED VERSION */
+/* MOBILE MENU */
 /* =============================== */
 
 .mobile-menu {
@@ -302,12 +302,12 @@ body {
     justify-content: center;
 }
 
-/* RIGHT SIDE: TEXT SHOULD ALIGN TO TOP */
+/* RIGHT SIDE: */
 .about-right {
     align-items: flex-start;
 }
 
-/* LEFT SIDE: GRID CENTERED IN ITS HALF */
+/* LEFT SIDE: */
 .about-left {
     align-items: center;
 }
@@ -740,7 +740,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0; /* remove padding that pushes image off screen */
+        padding: 0;
     }
 
     .menu-viewer img {
@@ -782,7 +782,7 @@ body {
     left: 15px;
     width: 2px;
     height: 32px;
-    background: white; /* X is now black */
+    background: white;
 }
 
 .menu-viewer-close::before {
