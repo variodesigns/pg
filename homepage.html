@@ -31,6 +31,11 @@
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/mainstyle.css">
+
+    <!-- Smooth scrolling -->
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
 <body>
 
@@ -49,11 +54,11 @@
 
         <!-- Desktop Menu -->
         <div class="nav-right">
-            <a href="homepage.html">Home</a>
+            <a href="#hero">Home</a>
             <a href="#about-section">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="reservations.html">Reservations</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="#menu-section">Menu</a>
+            <a href="#reservations-section">Reservations</a>
+            <a href="#contact-section">Contact Us</a>
         </div>
 
         <!-- Mobile Hamburger Icon -->
@@ -69,17 +74,17 @@
     <div class="nav-divider">
 
         <div class="mobile-menu">
-            <a href="homepage.html">Home</a>
+            <a href="#hero">Home</a>
             <a href="#about-section">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="reservations.html">Reservations</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="#menu-section">Menu</a>
+            <a href="#reservations-section">Reservations</a>
+            <a href="#contact-section">Contact Us</a>
         </div>
 
     </div>
 
     <!-- HERO SLIDESHOW -->
-<div class="hero-slideshow">
+<div class="hero-slideshow" id="hero">
     <div class="slide" style="background-image: url('images/hero1.jpg');"></div>
     <div class="slide" style="background-image: url('images/hero2.jpg');"></div>
   
@@ -89,7 +94,7 @@
             <br><br>
             Tapas, Steak, Spanish Plates & Curated Iberian Wines
         </div>
-        <a href="reservations.html" class="hero-button">Make a reservation</a>
+        <a href="#reservations-section" class="hero-button">Make a reservation</a>
 
     </div>
 </div>
@@ -129,7 +134,7 @@
 </section>
 
 <!-- MENU INTRO SECTION -->
-<section class="menu-intro">
+<section class="menu-intro" id="menu-section">
     <div class="menu-intro-container">
         <h2>Check out our Menus</h2>
         <p>
@@ -137,15 +142,15 @@
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 <div class="menu-buttons">
-    <a href="menu.html" class="menu-btn">Main Menu</a>
-    <a href="drinks.html" class="menu-btn">Drinks Menu</a>
+    <a href="#" class="menu-btn" id="open-main-menu">Main Menu</a>
+    <a href="#" class="menu-btn" id="open-drinks-menu">Drinks Menu</a>
 </div>
 
     </div>
 </section>
 
 <!-- RESERVATIONS SECTION -->
-<section class="reservations-section">
+<section class="reservations-section" id="reservations-section">
     <div class="reservations-container">
         <h2>Reservations</h2>
         <p>
@@ -161,7 +166,7 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section class="contact-section">
+<section class="contact-section" id="contact-section">
     <div class="contact-container">
         <h2>Contact Us</h2>
         <p>
@@ -235,12 +240,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<!-- FULLSCREEN MENU VIEWER (MUST BE OUTSIDE SCRIPT TAGS) -->
+<!-- FULLSCREEN MENU VIEWER -->
 <div id="menu-viewer" class="menu-viewer">
-    <span class="menu-viewer-close">&times;</span>
+    <span class="menu-viewer-close"></span>
     <img id="menu-viewer-img" src="" alt="Menu Image">
 </div>
 
 </body>
 </html>
-
