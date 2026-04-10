@@ -222,7 +222,7 @@ body {
 /* ABOUT US SECTION */
 .about-section {
     background: #82a497;
-    padding: 80px 0;
+    padding: 40px 0;
     color: white;
 }
 
@@ -262,6 +262,15 @@ body {
     color: white;
 }
 
+/* DESKTOP — make About Us images bigger */
+@media (min-width: 901px) {
+    .about-image img {
+        width: 130%;   /* increase size */
+        max-width: none;
+    }
+}
+
+
 /* MOBILE LAYOUT */
 @media (max-width: 900px) {
 
@@ -288,3 +297,46 @@ body {
         max-width: 500px;
     }
 }
+
+/* MENU INTRO SECTION */
+.menu-intro {
+    background: #ebe9dd;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.menu-intro-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.menu-intro h2 {
+    font-family: "Providence Sans Pro", sans-serif;
+    font-size: 42px;
+    color: #ad4100;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.menu-intro p {
+    font-family: "Providence Sans Regular", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* readable on #ebe9dd */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .menu-intro h2 {
+        font-size: 32px;
+    }
+
+    .menu-intro p {
+        font-size: 16px;
+    }
+}
+
