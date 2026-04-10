@@ -265,11 +265,10 @@ body {
 /* DESKTOP — make About Us images bigger */
 @media (min-width: 901px) {
     .about-image img {
-        width: 130%;   /* increase size */
+        width: 130%;
         max-width: none;
     }
 }
-
 
 /* MOBILE LAYOUT */
 @media (max-width: 900px) {
@@ -288,7 +287,7 @@ body {
         max-width: 90%;
         margin: 0 auto;
         text-align: center;
-        margin-top: -20px; /* pulls text upward */
+        margin-top: -20px;
     }
 
     .left-image {
@@ -311,16 +310,33 @@ body {
     margin: 0 auto;
 }
 
+/* START HIDDEN (scroll-trigger prep) */
+.menu-intro h2,
+.menu-intro p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+/* WHEN VISIBLE */
+.menu-intro h2.visible {
+    animation: slideInLeft 0.9s ease forwards;
+}
+
+.menu-intro p.visible {
+    animation: slideInRight 0.9s ease forwards;
+    animation-delay: 0.2s;
+}
+
 /* Header */
 .menu-intro h2 {
     font-family: "Providence Sans Pro", sans-serif;
     font-size: 42px;
     color: #ad4100;
     margin-bottom: 20px;
-    opacity: 0;
-    animation: slideInLeft 0.9s ease forwards;
 }
 
+/* Paragraph */
 .menu-intro p {
     font-family: "Providence Sans Regular", sans-serif;
     font-size: 18px;
@@ -328,9 +344,6 @@ body {
     color: #333;
     max-width: 700px;
     margin: 0 auto;
-    opacity: 0;
-    animation: slideInRight 0.9s ease forwards;
-    animation-delay: 0.2s; /* slight stagger for polish */
 }
 
 /* MOBILE */
@@ -366,4 +379,3 @@ body {
         transform: translateX(0);
     }
 }
-
