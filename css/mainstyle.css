@@ -38,7 +38,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 30px;
-    z-index: 1000; /* keep this */
+    z-index: 1000;
 }
 
 /* Logo */
@@ -61,12 +61,12 @@ body {
     opacity: 0.7;
 }
 
-/* Divider Line */
+/* Divider Line — NOW A REAL CONTAINER */
 .nav-divider {
     width: 100%;
-    height: 4px;
+    height: auto;
     background: #ad4100;
-    position: relative; /* anchor for mobile menu */
+    position: relative;
     z-index: 999;
 }
 
@@ -183,12 +183,12 @@ body {
 }
 
 /* =============================== */
-/* NEW MOBILE MENU — DROPDOWN STYLE */
+/* NEW MOBILE MENU — FIXED VERSION */
 /* =============================== */
 
 .mobile-menu {
     position: absolute;
-    top: 100%; /* now correctly means “below the divider” */
+    top: 4px; /* sits directly under the divider line */
     left: 0;
     width: 100%;
     background: #ebe9dd;
