@@ -452,6 +452,15 @@ body {
     opacity: 0.9;
 }
 
+@media (max-width: 480px) {
+    .reservation-widget-placeholder {
+        max-width: 90%;
+        padding: 25px 15px;
+        font-size: 18px;
+    }
+}
+
+
 /* CONTACT SECTION */
 .contact-section {
     background: #82a497;
@@ -550,6 +559,14 @@ body {
     animation: slideInLeft 0.9s ease forwards;
     animation-delay: 0.2s;
 }
+
+@media (max-width: 480px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: 95%;      /* slightly narrower */
+    }
+}
+
 
 
 /* FOOTER SECTION */
