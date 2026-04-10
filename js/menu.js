@@ -27,3 +27,19 @@ window.addEventListener("load", () => {
     mobileMenu.style.top = (totalHeight + offset) + "px";
     mobileMenu.style.height = `calc(100vh - ${totalHeight + offset}px)`;
 });
+
+// HERO SLIDESHOW
+window.addEventListener("load", () => {
+    const slides = document.querySelectorAll(".hero-slideshow .slide");
+    let index = 0;
+
+    function showNextSlide() {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }
+
+    slides[0].classList.add("active"); // show first slide
+
+    setInterval(showNextSlide, 2500); // 2.5 seconds per image
+});
