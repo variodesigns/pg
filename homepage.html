@@ -129,6 +129,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+<div class="menu-buttons">
+    <a href="menu.html" class="menu-btn">Main Menu</a>
+    <a href="drinks.html" class="menu-btn">Drinks Menu</a>
+</div>
+
     </div>
 </section>
 
@@ -138,21 +143,25 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const targets = document.querySelectorAll(".menu-intro h2, .menu-intro p");
+    const header = document.querySelector(".menu-intro h2");
+    const paragraph = document.querySelector(".menu-intro p");
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target); // stop watching THIS element only
+    function handleScroll() {
+        const triggerPoint = window.innerHeight * 0.85; // 85% down the viewport
+
+        [header, paragraph].forEach((el) => {
+            if (!el.classList.contains("visible")) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < triggerPoint) {
+                    el.classList.add("visible");
+                }
             }
         });
-    }, {
-        threshold: 0.05,              // fire very early
-        rootMargin: "0px 0px -10% 0px" // trigger just before fully in view
-    });
+    }
 
-    targets.forEach(el => observer.observe(el));
+    // Run on load and on scroll
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
 });
 </script>
 
