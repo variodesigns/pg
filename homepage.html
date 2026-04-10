@@ -197,13 +197,19 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector(".menu-intro h2");
-    const paragraph = document.querySelector(".menu-intro p");
+
+    // All elements that should animate on scroll
+    const targets = [
+        document.querySelector(".menu-intro h2"),
+        document.querySelector(".menu-intro p"),
+        document.querySelector(".contact-section h2"),
+        document.querySelector(".contact-section p")
+    ];
 
     function handleScroll() {
         const triggerPoint = window.innerHeight * 0.85; // 85% down the viewport
 
-        [header, paragraph].forEach((el) => {
+        targets.forEach((el) => {
             if (!el.classList.contains("visible")) {
                 const rect = el.getBoundingClientRect();
                 if (rect.top < triggerPoint) {
