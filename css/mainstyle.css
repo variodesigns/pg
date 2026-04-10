@@ -409,3 +409,170 @@ body {
     background: #f5f5f5;
     transform: translateY(-2px);
 }
+
+/* RESERVATIONS SECTION */
+.reservations-section {
+    background: #ad4100;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.reservations-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservations-section h2 {
+    font-family: "Providence Sans Pro", sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.reservations-section p {
+    font-family: "Providence Sans Regular", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: white;
+}
+
+/* Placeholder widget box */
+.reservation-widget-placeholder {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-family: "Providence Sans Pro", sans-serif;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background: #82a497;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-family: "Providence Sans Pro", sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-section p {
+    font-family: "Providence Sans Regular", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: white;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center; /* ← centers the button */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Providence Sans Regular", sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* SEND MESSAGE BUTTON (matches hero + menu buttons) */
+.contact-btn {
+    background: #ffffff;
+    color: #ad4100;
+    font-family: "Providence Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    width: auto;
+    max-width: 70%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+/* FOOTER SECTION */
+.footer-section {
+    background: #ebe9dd;
+    padding: 50px 0;
+    text-align: center;
+    color: #ad4100;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-copy {
+    font-family: "Providence Sans Regular", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ad4100;
+}
+
+.footer-design {
+    font-family: "Providence Sans Regular", sans-serif;
+    font-size: 16px;
+    color: #ad4100;
+}
+
+.footer-design a {
+    color: #ad4100;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-design a:hover {
+    opacity: 0.7;
+}
+
