@@ -808,3 +808,42 @@ body {
         left: 12px;
     }
 }
+
+@media (max-width: 768px) {
+
+    /* Force 3-column layout */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-left,
+    .nav-social,
+    .hamburger {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Left column: logo */
+    .nav-left {
+        justify-content: flex-start;
+    }
+
+    /* Center column: icons */
+    .nav-social {
+        justify-content: center;
+        margin-right: 0 !important;
+    }
+
+    /* Right column: hamburger */
+    .hamburger {
+        justify-content: flex-end;
+    }
+
+    /* Hide desktop menu */
+    .nav-right {
+        display: none !important;
+    }
+}
