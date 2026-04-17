@@ -29,5 +29,5 @@ window.addEventListener("load", () => {
 
     slides[0].classList.add("active"); // show first slide
 
-    setInterval(showNextSlide, 2000); // 2 seconds per image
+    setInterval(showNextSlide, 2500); // 2.5 seconds per image
 });
