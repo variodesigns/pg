@@ -394,7 +394,7 @@ body {
 /* MENU INTRO SECTION */
 .menu-intro {
     background: #ebe9dd;
-    padding: 40px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -557,7 +557,7 @@ body {
 /* CONTACT SECTION */
 .contact-section {
     background: #82a497;
-    padding: 40px 0;
+    padding: 10px 0;
     text-align: center;
     color: white;
 }
