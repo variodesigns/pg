@@ -175,9 +175,7 @@
         </p>
 
         <!-- Placeholder for reservation widget -->
-        <div class="reservation-widget-placeholder">
-            Reservation Widget Placeholder
-        </div>
+       <div id="sevenrooms-widget"></div>
     </div>
 </section>
 
@@ -261,6 +259,26 @@ document.addEventListener("DOMContentLoaded", () => {
     <span class="menu-viewer-close"></span>
     <img id="menu-viewer-img" src="" alt="Menu Image">
 </div>
+<script>
+  (function(d, s, id) {
+    var js, sr = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://www.sevenrooms.com/widget/embed.js";
+    sr.parentNode.insertBefore(js, sr);
+  }(document, "script", "sevenrooms-widget-script"));
+</script>
+
+<script>
+  window.SevenroomsWidget = window.SevenroomsWidget || [];
+  window.SevenroomsWidget.push({
+    venueId: "YOUR_VENUE_ID_HERE",
+    type: "reservations",
+    targetId: "sevenrooms-widget",
+    inline: true
+  });
+</script>
 
 </body>
 </html>
